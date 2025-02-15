@@ -3,8 +3,8 @@ import CustomSelect from "../components/CustomSelect";
 
 const QuestBar = () => {
   return (
-    <section id="QuestCards" className={`w-full mx-auto bg-black z-0 h-28`}>
-      <div className="flex flex-row items-center w-full top-[20px] gap-12">
+    <section id="QuestCards" className={`w-full mx-auto bg-black z-0 h-28`} style={{paddingTop: "40px"}}>
+      <div className="flex flex-row items-center w-full gap-12">
         <div className="w-1/2">
           <p
             className="text-white lg:text-[36px] sm:text-[30px] xs:text-[26px] text-[20px] lg:leading-[36px]"
@@ -20,8 +20,8 @@ const QuestBar = () => {
                 <img
                   src={search_quest}
                   alt="Search"
-                  className="h-6 w-6 block cursor-pointer"
-                  style={{ paddingTop: "7px" }}
+                  className="h-5 w-5 block cursor-pointer"
+                  style={{ paddingTop: "1px" }}
                 />
               </label>
               <input

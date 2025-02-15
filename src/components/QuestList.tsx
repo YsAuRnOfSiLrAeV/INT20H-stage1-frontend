@@ -91,7 +91,7 @@ const QuestList: React.FC = () => {
         <p className="text-white text-xl">Поки що немає квестів</p>
       ) : (
         <>
-          <div className="grid gap-10 grid-cols-4">
+          <div className="grid gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {paginatedQuests.map((quest) => (
               <QuestCard key={quest.id} {...quest} />
             ))}
@@ -102,7 +102,7 @@ const QuestList: React.FC = () => {
               <button
                 onClick={() => goToPage(currentPage - 1)}
                 disabled={currentPage === 1}
-                className={`p-2 rounded-full ${
+                className={`p-2 rounded-full cursor-pointer ${
                   currentPage === 1 ? "opacity-50" : "hover:bg-blue-600"
                 }`}
               >
@@ -111,11 +111,12 @@ const QuestList: React.FC = () => {
 
               {[...Array(totalPages)].map((_, i) => (
                 <button
+                  id={`${ currentPage === i + 1 ? "current_page" : "other_page"}`}
                   key={i}
                   onClick={() => goToPage(i + 1)}
-                  className={`p-2 rounded-full ${
+                  className={`p-2 rounded-full cursor-pointer ${
                     currentPage === i + 1
-                      ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white"
+                      ? ""
                       : "hover:bg-blue-600"
                   }`}
                 >
@@ -126,7 +127,7 @@ const QuestList: React.FC = () => {
               <button
                 onClick={() => goToPage(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className={`p-2 rounded-full ${
+                className={`p-2 rounded-full cursor-pointer ${
                   currentPage === totalPages
                     ? "opacity-50"
                     : "hover:bg-blue-600"

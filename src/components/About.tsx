@@ -14,25 +14,23 @@ const About = () => {
       alert("Будь ласка, увійдіть у систему для створення квесту.");
     }
   };
-
+  
   return (
     <section
-      className={`w-full mx-auto bg-black z-0`}
-      style={{ height: "100vh", paddingTop: 100, minHeight: 620 }}
+      className={`w-full mx-auto bg-black z-0 pt-25 h-screen`}
     >
-      <div className="flex flex-row items-center gap-35 w-full top-[200px]">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row items-center gap-25 lg:gap-35 w-full">
+        <div className="lg:w-1/2">
           <p
-            className="text-white lg:text-[46px] sm:text-[40px] xs:text-[36px] text-[30px] lg:leading-[46px]"
-            style={{ paddingLeft: "60px" }}
+            className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight px-4 sm:px-0 md:pl-16"
           >
-            <text>MetaQuest</text> - онлайн платформа, де саме ТИ можеш
+            <text id="text">MetaQuest</text> - онлайн платформа, де саме ТИ можеш
             створювати та проходити квести як онлайн, так і наживо
           </p>
         </div>
         <div>
           <SpotlightCard
-            className="custom-spotlight-card z-60 top-[80px]"
+            className="custom-spotlight-card z-60 lg:top-[170px]"
             spotlightColor="rgba(255, 255, 255, 0.2)"
             style={{
               display: "flex",
@@ -43,10 +41,10 @@ const About = () => {
             <div
               className="flex flex-col items-center gap-3.5"
               style={{
-                paddingLeft: "50px",
-                paddingRight: "50px",
-                paddingTop: "30px",
-                paddingBottom: "15px",
+                paddingLeft: "30px",
+                paddingRight: "30px",
+                paddingTop: "20px",
+                paddingBottom: "0px",
               }}
             >
               <p className="text-white lg:text-[46px] sm:text-[40px] xs:text-[36px] text-[30px] lg:leading-[46px]">
@@ -58,17 +56,17 @@ const About = () => {
               <div
                 id="main-button"
                 onClick={handleCreateQuestClick}
-                className="cursor-pointer"
+                className="cursor-pointer flex"
               >
-                <a className="text-white lg:text-[26px] sm:text-[22px] xs:text-[18px] text-[17px] lg:leading-[26px]">
-                  Створи свій квест!
+                <a className="flex items-center text-white text-2xl sm:text-xl md:text-[26px] lg:leading-[26px]">
+                  Створи свій квест! 
                 </a>
               </div>
               <p>або</p>
               <div id="go_to_exhist">
                 <a
                   href="#QuestCards"
-                  className="text-white lg:text-[26px] sm:text-[22px] xs:text-[18px] text-[17px] lg:leading-[26px]"
+                  className="text-white text-2xl sm:text-xl md:text-[26px] lg:leading-[26px]"
                 >
                   Перейди до існуючих
                 </a>

@@ -5,7 +5,7 @@ import QuestList from "../components/QuestList";
 
 const Page = () => {
     return <>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-5 bg-black">
             <Navbar/>
             <About/>
             <QuestBar/>

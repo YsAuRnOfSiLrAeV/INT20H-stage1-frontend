@@ -35,6 +35,7 @@ const QuestCard: React.FC<QuestCardProps> = ({
         border: "1px solid rgba(173, 173, 192, 0.2)",
         marginTop: "32px",
         position: "relative",
+        margin: "16px"
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
