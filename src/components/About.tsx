@@ -17,7 +17,7 @@ const About = () => {
   
   return (
     <section
-      className={`w-full mx-auto bg-black z-0 pt-10 h-screen`}
+      className={`w-full mx-auto bg-black z-0 pt-10 pb-20 md:h-screen`}
     >
       <div className="flex flex-col lg:flex-row items-center gap-18 lg:gap-35 w-full">
         <div className="lg:w-1/2">

@@ -12,9 +12,9 @@ const CustomSelect = () => {
     return (
       <div style={{
         position: 'relative',
-        width: '15%',
+        width: '220px',
         borderRadius: '5px',
-        border: '1px solid #B2ABB1',
+        border: '1px solid #99a1af',
         backgroundColor: '#000',
         color: 'white',
         textAlign: 'center',
