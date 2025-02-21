@@ -103,7 +103,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-16 flex justify-between items-center z-50 bg-gradient-to-b from-black/50 to-black/20 px-6"
+      className="sticky top-0 left-0 w-full h-16 flex justify-between items-center z-50 bg-gradient-to-b from-black/50 to-black/20 px-6"
       style={{ padding: "0 20px" }}
     >
       <div className="flex items-center gap-3">

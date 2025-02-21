@@ -17,9 +17,9 @@ const About = () => {
   
   return (
     <section
-      className={`w-full mx-auto bg-black z-0 pt-25 h-screen`}
+      className={`w-full mx-auto bg-black z-0 pt-10 h-screen`}
     >
-      <div className="flex flex-col lg:flex-row items-center gap-25 lg:gap-35 w-full">
+      <div className="flex flex-col lg:flex-row items-center gap-18 lg:gap-35 w-full">
         <div className="lg:w-1/2">
           <p
             className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight px-4 sm:px-0 md:pl-16"
