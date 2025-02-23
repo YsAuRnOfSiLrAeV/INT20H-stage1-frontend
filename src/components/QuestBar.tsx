@@ -3,7 +3,7 @@ import CustomSelect from "../components/CustomSelect";
 
 const QuestBar = () => {
   return (
-    <section className="w-full mx-auto bg-black z-0 py-4">
+    <section className="w-full mx-auto bg-black z-0 py-4" id="QuestCards">
       <div className="flex flex-col sm:flex-row items-center w-full gap-8 sm:gap-12 mb-5 lg:mb-2">
         <div className="w-full sm:w-1/2 text-center sm:text-left">
           <p className="text-white text-[28px] sm:text-[30px] lg:text-[36px] leading-[1.2] px-4 sm:px-16">
